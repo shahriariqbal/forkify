@@ -1,0 +1,27 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "javascript project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahriariqbal079/forkify.git"
+  },
+  "author": "Shahriar Iqbal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahriariqbal079/forkify/issues"
+  },
+  "homepage": "https://github.com/shahriariqbal079/forkify#readme",
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
