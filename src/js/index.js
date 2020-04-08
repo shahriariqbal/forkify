@@ -16,7 +16,7 @@
 //https://crossorigin.me/
 //https://cors-anywhere.herokuapp.com/
 
-import axios from 'axios';
+/*import axios from 'axios';
 
 async function getResults(query){
 	const proxy = 'https://cors-anywhere.herokuapp.com/';
@@ -30,4 +30,10 @@ async function getResults(query){
 
 	
 }
-getResults('carrot');
+getResults('carrot');*/
+
+import Search from './models/Search';
+
+const search = new Search('pizza');
+console.log(search);
+search.getResults();
