@@ -35,16 +35,9 @@ getResults('carrot');*/
 
 import Search from './models/Search';
 import * as searchView from './views/searchView';
-<<<<<<< HEAD
-<<<<<<< HEAD
 import {elements, renderLoader, clearLoader} from './views/base';
-import { EvalSourceMapDevToolPlugin } from 'webpack';
-=======
-import {elements} from './views/base';
->>>>>>> parent of 30c7c93... Rendering an AJAX Loading Spinner
-=======
-import {elements} from './views/base';
->>>>>>> parent of 30c7c93... Rendering an AJAX Loading Spinner
+
+
 
 //*******Global State of the app
 //Search Object
@@ -65,11 +58,13 @@ const controlSearch = async () => {
 		//3) Prepare UI for results
 		searchView.clearInput();
 		searchView.clearResults();
+		renderLoader(elements.searchRes);
 
 		//4) Search for recipes
 		await state.search.getResults();
 
 		//5)Render results on UI
+		clearLoader();
 		searchView.renderResults(state.search.result);
 	}
 }
