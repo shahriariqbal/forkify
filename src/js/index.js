@@ -36,8 +36,12 @@ getResults('carrot');*/
 import Search from './models/Search';
 import * as searchView from './views/searchView';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import {elements, renderLoader, clearLoader} from './views/base';
 import { EvalSourceMapDevToolPlugin } from 'webpack';
+=======
+import {elements} from './views/base';
+>>>>>>> parent of 30c7c93... Rendering an AJAX Loading Spinner
 =======
 import {elements} from './views/base';
 >>>>>>> parent of 30c7c93... Rendering an AJAX Loading Spinner
