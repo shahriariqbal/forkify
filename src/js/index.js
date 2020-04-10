@@ -36,6 +36,7 @@ getResults('carrot');*/
 import Search from './models/Search';
 import * as searchView from './views/searchView';
 import {elements, renderLoader, clearLoader} from './views/base';
+import { EvalSourceMapDevToolPlugin } from 'webpack';
 
 //*******Global State of the app
 //Search Object
@@ -72,3 +73,6 @@ elements.searchForm.addEventListener('submit', e => {
 	controlSearch();
 });
 
+elements.searchResPages.addEventListener('click', e => {
+	console.log(e.target);
+});
